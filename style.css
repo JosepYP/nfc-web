@@ -17,7 +17,7 @@ body {
 /* =========================================
    SISTEMA DE LAYOUTS (Estructura de la página)
    ========================================= */
-/* Layout para la pantalla principal (centrado absoluto) */
+/* Layout para la pantalla principal */
 .layout-centrado {
     display: flex;
     flex-direction: column;
