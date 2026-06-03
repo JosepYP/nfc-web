@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Archivo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background-color: #f7f7f5; 
+            color: #1a1a1a;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            padding: 8vw;
+            max-width: 600px; /* Evita que el texto sea infinito si lo abre en un iPad o portátil */
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0de;
+            padding-bottom: 1rem;
+        }
+
+        .titulo-seccion {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .link-volver {
+            font-size: 0.8rem;
+            color: #888;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .link-volver:hover, .link-volver:active {
+            color: #1a1a1a;
+        }
+
+        /* Estructura de cada día pasado */
+        .entrada {
+            margin-bottom: 3rem;
+        }
+
+        .fecha {
+            font-family: ui-monospace, "SF Mono", "Menlo", "Courier New", monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .mensaje-pasado {
+            font-size: 1.1rem; /* Un poco más pequeño que la pantalla principal para facilitar el scroll */
+            line-height: 1.4;
+            color: #333;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="titulo-seccion">Archivo</div>
+        <a href="index.html" class="link-volver">← Volver a hoy</a>
+    </header>
+
+    <div class="entradas-contenedor">
+        
+        <!-- PEGAR AQUÍ LAS ENTRADAS DE LOS DÍAS ANTERIORES -->
+
+        <div class="entrada">
+            <div class="fecha">02.06.2026</div>
+            <div class="mensaje-pasado">
+                <p>Me he acordado de ti viendo un editorial de moda brutal esta mañana. Ojalá lo viésemos juntos. Que vaya muy bien el día por allí.</p>
+            </div>
+        </div>
+
+        <div class="entrada">
+            <div class="fecha">01.06.2026</div>
+            <div class="mensaje-pasado">
+                <p>Primer día. Disfruta muchísimo de la ciudad y de cada rincón.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
