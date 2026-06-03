@@ -2,35 +2,25 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- El viewport configurado para móvil asegura que la escala sea exacta y sin márgenes raros -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>03.06.2026</title>
     <style>
-        * { 
-            margin: 0; 
-            padding: 0; 
-            box-sizing: border-box; 
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            /* Un fondo ligeramente crudo y orgánico */
             background-color: #f7f7f5; 
             color: #1a1a1a;
-            /* Tipografía técnica y sin florituras */
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            
-            /* Centrado absoluto para la pantalla del móvil */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 8vw; /* Margen dinámico basado en la pantalla del móvil */
+            padding: 8vw;
             text-align: center;
         }
 
         .fecha {
-            /* Uso de tipografía monoespaciada para la fecha, separándola visualmente del texto */
             font-family: ui-monospace, "SF Mono", "Menlo", "Courier New", monospace;
             font-size: 0.75rem;
             letter-spacing: 0.05em;
@@ -46,12 +36,26 @@
             max-width: 100%;
         }
 
-        /* Regla ya preparada por si incluyes referencias visuales */
         img {
             width: 100%;
             height: auto;
             border-radius: 2px;
             margin-top: 1.5rem;
+        }
+
+        /* Estilo para el enlace al historial */
+        .link-archivo {
+            margin-top: 4rem;
+            font-size: 0.8rem;
+            color: #888;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .link-archivo:hover, .link-archivo:active {
+            color: #1a1a1a;
+            border-bottom: 1px solid #1a1a1a;
         }
     </style>
 </head>
@@ -60,5 +64,8 @@
     <div class="mensaje">
         <p>Este es el espacio para tu mensaje diario. Aquí puedes dejar una nota rápida, un buen día, o una buena referencia fotográfica para que la vea antes de salir a clase.</p>
     </div>
+    
+    <!-- Enlace sutil al historial -->
+    <a href="historial.html" class="link-archivo">Archivo</a>
 </body>
 </html>
