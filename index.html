@@ -2,55 +2,63 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Ti</title>
+    <!-- El viewport configurado para móvil asegura que la escala sea exacta y sin márgenes raros -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>03.06.2026</title>
     <style>
-        /* Reseteo básico de márgenes */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
         
         body {
-            /* Fondo ligeramente crudo para una estética más orgánica y limpia */
+            /* Un fondo ligeramente crudo y orgánico */
             background-color: #f7f7f5; 
             color: #1a1a1a;
-            /* Tipografía de sistema, técnica y de alta fidelidad */
+            /* Tipografía técnica y sin florituras */
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
             
-            /* Centrado absoluto en pantalla */
+            /* Centrado absoluto para la pantalla del móvil */
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             min-height: 100vh;
-            padding: 2rem;
+            padding: 8vw; /* Margen dinámico basado en la pantalla del móvil */
             text-align: center;
         }
 
-        .mensaje-diario {
-            max-width: 400px;
-            width: 100%;
+        .fecha {
+            /* Uso de tipografía monoespaciada para la fecha, separándola visualmente del texto */
+            font-family: ui-monospace, "SF Mono", "Menlo", "Courier New", monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            color: #666;
+            margin-bottom: 1.5rem;
         }
 
-        /* Estilo del texto principal */
-        p {
-            font-size: 1.35rem;
-            line-height: 1.4;
+        .mensaje {
+            font-size: 1.4rem;
+            line-height: 1.35;
             font-weight: 400;
-            letter-spacing: -0.02em; 
+            letter-spacing: -0.02em;
+            max-width: 100%;
         }
 
-        /* Reglas para cuando decidas poner imágenes */
+        /* Regla ya preparada por si incluyes referencias visuales */
         img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
-            border-radius: 2px; /* Corte limpio, nada de bordes redondeados infantiles */
-            margin-bottom: 1rem;
+            border-radius: 2px;
+            margin-top: 1.5rem;
         }
     </style>
 </head>
 <body>
-    <div class="mensaje-diario">
-        
-        <p>Buen viaje. Hoy empezamos.</p>
-        </div>
+    <div class="fecha">03.06.2026</div>
+    <div class="mensaje">
+        <p>Este es el espacio para tu mensaje diario. Aquí puedes dejar una nota rápida, un buen día, o una buena referencia fotográfica para que la vea antes de salir a clase.</p>
+    </div>
 </body>
 </html>
