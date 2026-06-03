@@ -1,71 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>03.06.2026</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>03.06.2026</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="layout-centrado">
+
+        <div class="fecha">03.06.2026</div>
         
-        body {
-            background-color: #f7f7f5; 
-            color: #1a1a1a;
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 8vw;
-            text-align: center;
-        }
+        <div class="mensaje">
+            <p>Este es el espacio para tu mensaje diario. Aquí puedes dejar una nota rápida, un buen día, o una buena referencia fotográfica para que la vea antes de salir a clase.</p>
+        </div>
 
-        .fecha {
-            font-family: ui-monospace, "SF Mono", "Menlo", "Courier New", monospace;
-            font-size: 0.75rem;
-            letter-spacing: 0.05em;
-            color: #666;
-            margin-bottom: 1.5rem;
-        }
+        <img src="assets/img/patricioEnamorado.jpg" alt="Descripción visual">
 
-        .mensaje {
-            font-size: 1.4rem;
-            line-height: 1.35;
-            font-weight: 400;
-            letter-spacing: -0.02em;
-            max-width: 100%;
-        }
+        <!--<audio controls>
+            <source src="assets/audio/nota-voz.mp3" type="audio/mpeg">
+        </audio>-->
 
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 2px;
-            margin-top: 1.5rem;
-        }
+        <!--<video autoplay loop muted playsinline>
+            <source src="assets/video/animacion.mp4" type="video/mp4">
+        </video>-->
+        
+        <a href="historial.html" class="link-archivo">Archivo</a>
 
-        /* Estilo para el enlace al historial */
-        .link-archivo {
-            margin-top: 4rem;
-            font-size: 0.8rem;
-            color: #888;
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.2s ease, color 0.2s ease;
-        }
-
-        .link-archivo:hover, .link-archivo:active {
-            color: #1a1a1a;
-            border-bottom: 1px solid #1a1a1a;
-        }
-    </style>
-</head>
-<body>
-    <div class="fecha">03.06.2026</div>
-    <div class="mensaje">
-        <p>Este es el espacio para tu mensaje diario. Aquí puedes dejar una nota rápida, un buen día, o una buena referencia fotográfica para que la vea antes de salir a clase.</p>
-    </div>
-    
-    <!-- Enlace sutil al historial -->
-    <a href="historial.html" class="link-archivo">Archivo</a>
-</body>
+    </body>
 </html>
