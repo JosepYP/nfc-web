@@ -1,3 +1,4 @@
+
 /* =========================================
    RESETEO Y VARIABLES GLOBALES
    ========================================= */
@@ -7,62 +8,67 @@
     box-sizing: border-box; 
 }
 
-body {
-    background-color: #f7f7f5; 
-    color: #1a1a1a;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding: 8vw;
+/* =========================================
+   Fuente propia: Daily Slab Regular
+========================================= */
+@font-face {
+    font-family: 'DailySlabRegular'; 
+    
+    src: url('assets/fonts/DailySlabRegular.otf') format('opentype');
+    
+    font-weight: bold;
+    font-style: italic;
 }
 
+body {
+    background-color: #ffffff; /*Color de fondo*/
+    color: #000000; /*Color del texto*/
+    font-family: 'Inter', sans-serif; /*Fuente principal*/
+    /*padding: 30px 20px 80px 20px;*/
+}
+
+
 /* =========================================
-   SISTEMA DE LAYOUTS (Estructura de la página)
-   ========================================= */
-/* Layout para la pantalla principal */
-.layout-centrado {
+   Clases
+========================================= */
+.fecha {
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
-    /*min-height: 100vh;*/
-    text-align: center;
-}
 
-/* Layout para el historial (lectura vertical) */
-.layout-archivo {
-    max-width: 600px;
-    margin: 0 auto;
-}
+    position: sticky;
+    top: 20px; /* Le dice que se pegue cuando llegue al píxel 0 (el borde superior) */
+    /*padding: 10px;*/
 
-/* =========================================
-   TIPOGRAFÍA Y COMPONENTES VISUALES
-   ========================================= */
-.fecha {
-    font-family: ui-monospace, "SF Mono", "Menlo", "Courier New", monospace;
     font-size: 0.75rem;
     letter-spacing: 0.05em;
-    color: #666;
-    margin-bottom: 1.5rem;
+    color: #000000;
+    /*margin-bottom: 1.5rem;*/
+}
+
+.titulo {
+    font-family: 'DailySlabRegular', serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    /*margin-bottom: 1rem;*/
+
+    padding: 90px 0px 0px 0px; /* Espacio horizontal para evitar que el texto toque los bordes en pantallas pequeñas */
 }
 
 .mensaje {
     font-size: 1.4rem;
     line-height: 1.35;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -0.02em;
     max-width: 100%;
-}
-
-.mensaje-pasado {
-    font-size: 1.1rem;
-    line-height: 1.4;
-    color: #333;
 }
 
 img {
     width: 100%;
     height: auto;
     border-radius: 2px;
-    margin-top: 1.5rem;
+    /*margin-top: 1.5rem;*/
 }
 
 /* =========================================
@@ -111,4 +117,22 @@ a {
 /* Separación entre días pasados */
 .entrada {
     margin-bottom: 3rem;
+}
+
+.hero {
+    height: 100vh;           /* Fuerza a que mida exactamente la altura de la pantalla */
+    width: 100%;             /* Ancho completo */
+    position: relative;      /* NECESARIO para que las imágenes se posicione respecto a ESTE contenedor */
+    box-sizing: border-box;  /* Asegura que los márgenes se incluyan en el tamaño total */
+    
+    /* El margen de 8vw que mencionaste antes, se lo ponemos aquí para que el texto lo respete */
+    /*padding: 8vw;*/
+    padding: 30px 20px 60px 20px;
+}
+
+.daily-images-container {
+    position: absolute;      /* Se "arranca" del flujo de la página */
+    bottom: 60px;            /* Separa la base de todo este contenedor 60px de la base de .section-hero */
+    
+    padding: 0px 20px 0px 0px;
 }
