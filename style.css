@@ -8,6 +8,10 @@
     box-sizing: border-box; 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* =========================================
    Fuente propia: Daily Slab Regular
 ========================================= */
@@ -44,6 +48,8 @@ body {
     letter-spacing: 0.05em;
     color: #000000;
     /*margin-bottom: 1.5rem;*/
+
+    z-index: 10; /* Asegura que el texto de la fecha esté por encima de las imágenes */
 }
 
 .titulo {
@@ -129,10 +135,46 @@ a {
     /*padding: 8vw;*/
     padding: 30px 20px 60px 20px;
 }
+.contenido {
+    /*height: 100vh;   */        /* Fuerza a que mida exactamente la altura de la pantalla */
+    width: 100%;             /* Ancho completo */
+    position: relative;      /* NECESARIO para que las imágenes se posicione respecto a ESTE contenedor */
+    box-sizing: border-box;  /* Asegura que los márgenes se incluyan en el tamaño total */
+    
+    /* El margen de 8vw que mencionaste antes, se lo ponemos aquí para que el texto lo respete */
+    /*padding: 8vw;*/
+    padding: 30px 20px 70px 20px;
+}
 
 .daily-images-container {
     position: absolute;      /* Se "arranca" del flujo de la página */
-    bottom: 60px;            /* Separa la base de todo este contenedor 60px de la base de .section-hero */
+    bottom: 100px;            /* Separa la base de todo este contenedor 60px de la base de .section-hero */
     
     padding: 0px 20px 0px 0px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0px 20px 70px 20px;
+
+    
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+    color: #000000;
+}
+
+.listaFechas {
+    font-family: 'DailySlabRegular', serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    /*margin-bottom: 1rem;*/
+
+    padding: 90px 0px 0px 0px; /* Espacio horizontal para evitar que el texto toque los bordes en pantallas pequeñas */
 }
