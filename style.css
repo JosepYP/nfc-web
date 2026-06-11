@@ -22,6 +22,7 @@ html {
     
     font-weight: bold;
     font-style: italic;
+    letter-spacing: -0.002em;
 }
 
 body {
@@ -56,7 +57,7 @@ body {
     font-family: 'DailySlabRegular', serif;
     font-size: 2rem;
     line-height: 1.2;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.002em;
     /*margin-bottom: 1rem;*/
 
     padding: 90px 0px 0px 0px; /* Espacio horizontal para evitar que el texto toque los bordes en pantallas pequeñas */
@@ -64,7 +65,7 @@ body {
 
 .mensaje {
     font-size: 1.4rem;
-    line-height: 1.35;
+    line-height: 1.3;
     font-weight: 500;
     letter-spacing: -0.02em;
     max-width: 100%;
@@ -173,7 +174,7 @@ a {
     font-family: 'DailySlabRegular', serif;
     font-size: 2rem;
     line-height: 1.2;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.002em;
     /*margin-bottom: 1rem;*/
 
     padding: 90px 0px 0px 0px; /* Espacio horizontal para evitar que el texto toque los bordes en pantallas pequeñas */
