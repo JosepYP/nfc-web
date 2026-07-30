@@ -179,3 +179,7 @@ a {
 
     padding: 90px 0px 0px 0px; /* Espacio horizontal para evitar que el texto toque los bordes en pantallas pequeñas */
 }
+
+.audio {
+    margin: 20px;
+}
